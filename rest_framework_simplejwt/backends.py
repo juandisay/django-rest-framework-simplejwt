@@ -54,7 +54,7 @@ class TokenBackend:
             # For PyJWT <= 1.7.1
             return token.decode('utf-8')
         # For PyJWT >= 2.0.0a1
-        return token.decode('utf-8')
+        return token
 
     def decode(self, token, verify=True):
         """
